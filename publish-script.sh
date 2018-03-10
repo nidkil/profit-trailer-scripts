@@ -6,7 +6,7 @@ CUR_DIR=$(pwd)
 
 source $CUR_DIR/script-helpers/helpers.sh
 
-SYM_LINKS=$(find /opt/proft-trailer/*-cur -type l)
+SYM_LINKS=$(find /opt/profit-trailer/*-cur -type l)
 
 while read -r SYM_LINK; do
     echo "Publishing scripts to: $SYM_LINK"
