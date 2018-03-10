@@ -91,7 +91,7 @@ debug_info() {
 	echo "    CUR_DIR        : $CUR_DIR"
 	echo "    PARENT_DIR     : $PARENT_DIR"
 	echo "    BASE_PATH      : $BASE_PATH"
-	echo "    ROOT_DIR	     : $ROOT_DIR"
+	echo "    ROOT_DIR       : $ROOT_DIR"
 	echo "    CFG_DIR        : $CFG_DIR"
 	echo "    BCK_DIR        : $BCK_DIR"
 	echo "    EXCHANGE       : $EXCHANGE"
