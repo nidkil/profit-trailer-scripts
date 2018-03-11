@@ -1,5 +1,5 @@
 #!/bin/bash
-source $CUR_DIR/script-helpers/color_vars.sh
+source $CUR_DIR/helper-scripts/color_vars.sh
 
 # Usage: print_err "Error: could not find file [./tmp/does-not-exist]"
 print_err() {

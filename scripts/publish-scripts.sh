@@ -4,15 +4,15 @@
 ORIG_DIR=$(pwd -P)
 CUR_DIR=$(pwd)
 
-source $CUR_DIR/script-helpers/helpers.sh
+source $CUR_DIR/helper-scripts/helpers.sh
 
 SYM_LINKS=$(find /opt/profit-trailer/*-cur -type l)
 
 while read -r SYM_LINK; do
     echo "Publishing scripts to: $SYM_LINK"
 	cp -f *.sh $SYM_LINK/.
-	cp -rf script-helpers $SYM_LINK/.
+	cp -rf helper-scripts $SYM_LINK/.
 	# We don't want this script to be published
-	rm $SYM_LINK/publish-script.sh
+	rm $SYM_LINK/publish-scripts.sh
 	chmod u+x $SYM_LINK/*.sh
 done <<< "$SYM_LINKS"
