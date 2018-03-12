@@ -4,7 +4,7 @@
 ORIG_DIR=$(pwd -P)
 CUR_DIR=$(pwd)
 
-source $CUR_DIR/script-helpers/helpers.sh
+source $CUR_DIR/helper-scripts/helpers.sh
 
 # Get the parent directory of the current directory
 PARENT_DIR=`dirname $ORIG_DIR`
