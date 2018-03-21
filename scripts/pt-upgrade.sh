@@ -208,7 +208,7 @@ cp $PREV_DIR/ProfitTrailerData.json* .
 
 echo "Copying scripts"
 cp $PREV_DIR/*.sh .
-cp -r $PREV_DIR/script-helpers .
+cp -r $PREV_DIR/helper-scripts .
 
 echo "Copying PM2 file"
 cp -f $PREV_DIR/pm2-ProfitTrailer.json .
