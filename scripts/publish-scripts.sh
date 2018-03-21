@@ -12,6 +12,8 @@ while read -r SYM_LINK; do
     echo "Publishing scripts to: $SYM_LINK"
 	cp -f *.sh $SYM_LINK/.
 	cp -rf helper-scripts $SYM_LINK/.
+	# If the old script directory still exists, delete it
+	del_dir $SYM_LINK/script-helpers
 	# We don't want this script to be published
 	rm $SYM_LINK/publish-scripts.sh
 	chmod u+x $SYM_LINK/*.sh
